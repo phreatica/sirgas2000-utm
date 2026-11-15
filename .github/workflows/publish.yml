@@ -1,14 +1,13 @@
 # Publica no npm quando uma release é criada no GitHub (o Zenodo gera o DOI pela mesma release).
 # Autenticação: Trusted Publishing (OIDC) configurado no npmjs.com para este repositório e este arquivo.
-# O NPM_TOKEN abaixo é só um fallback temporário: depois de ligar o Trusted Publishing, apague o token no npm
-# e o segredo da organização; o npm passa a usar o OIDC sozinho.
+# Não há token: o npm confia na identidade do GitHub Actions (permissão id-token abaixo).
 name: Publicar no npm
 on:
   release:
     types: [published]
 permissions:
   contents: read
-  id-token: write # npm provenance
+  id-token: write # Trusted Publishing e selo de procedência
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -22,5 +21,3 @@ jobs:
       - run: npm install -g npm@latest
       - run: npm ci
       - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
