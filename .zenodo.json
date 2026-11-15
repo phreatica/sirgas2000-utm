@@ -1,0 +1,8 @@
+{
+  "title": "sirgas2000-utm: UTM ↔ latitude/longitude conversion for SIRGAS 2000",
+  "upload_type": "software",
+  "description": "Open-source TypeScript library to convert UTM ↔ latitude/longitude in SIRGAS 2000 (GRS80), Brazil's official datum, with automatic zone, EPSG codes and Brazilian degree-minute-second parsing. Sub-millimetre accuracy (Krüger series after Karney, 2011), validated against proj4. Made by Phreatica (https://phreatica.com).",
+  "creators": [{ "name": "Phreatica" }],
+  "license": "MIT",
+  "keywords": ["SIRGAS 2000", "UTM", "coordinate conversion", "transverse Mercator", "Brazil", "geodesy"]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "sirgas2000-utm",
+  "version": "0.1.0",
+  "description": "Conversão de coordenadas UTM ↔ latitude/longitude no SIRGAS 2000 (GRS80), com fuso automático, EPSG e graus-minutos-segundos no formato brasileiro. Precisão submilimétrica (séries de Krüger/Karney), sem dependências.",
+  "keywords": [
+    "sirgas2000",
+    "sirgas-2000",
+    "utm",
+    "coordenadas",
+    "conversao-de-coordenadas",
+    "latitude-longitude",
+    "grs80",
+    "transverse-mercator",
+    "geodesia",
+    "brasil",
+    "gis",
+    "epsg-31983"
+  ],
+  "homepage": "https://phreatica.github.io/sirgas2000-utm/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phreatica/sirgas2000-utm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phreatica/sirgas2000-utm/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Phreatica",
+    "url": "https://phreatica.com"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/proj4": "2.19.0",
+    "proj4": "2.23.0",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Se usar este software, cite-o assim. / If you use this software, please cite it as below."
+title: "sirgas2000-utm: UTM ↔ latitude/longitude conversion for SIRGAS 2000"
+type: software
+authors:
+  - name: "Phreatica"
+    website: "https://phreatica.com"
+version: 0.1.0
+date-released: 2026-11-14
+license: MIT
+repository-code: "https://github.com/phreatica/sirgas2000-utm"
+url: "https://phreatica.github.io/sirgas2000-utm/"
+keywords:
+  - SIRGAS 2000
+  - UTM
+  - coordinate conversion
+  - transverse Mercator
+  - Brazil
+references:
+  - type: article
+    title: "Transverse Mercator with an accuracy of a few nanometers"
+    authors:
+      - family-names: Karney
+        given-names: Charles F. F.
+    journal: "Journal of Geodesy"
+    volume: 85
+    start: 475
+    end: 485
+    year: 2011
+    doi: 10.1007/s00190-011-0445-3

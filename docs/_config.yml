@@ -1,0 +1,4 @@
+title: sirgas2000-utm
+description: Conversão de coordenadas UTM ↔ latitude/longitude no SIRGAS 2000, com fuso automático e EPSG. Open-source, feita pela Phreatica.
+theme: jekyll-theme-cayman
+lang: pt-BR
