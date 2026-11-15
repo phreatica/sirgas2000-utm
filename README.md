@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/sirgas2000-utm)](https://www.npmjs.com/package/sirgas2000-utm)
 [![licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24236808.svg)](https://doi.org/10.5281/zenodo.24236808)
 
 **Converta coordenadas UTM ↔ latitude/longitude no SIRGAS 2000**, com fuso automático, código EPSG e graus-minutos-segundos no formato brasileiro (`23°32'51,2"S`, `46º38'10"O`).
 
